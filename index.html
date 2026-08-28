@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cleaning Template | Residential & Commercial Cleaning</title>
+  <meta name="description" content="Premium residential and commercial cleaning services with flexible scheduling, insured professionals and quick quote estimates.">
+  <meta property="og:title" content="Cleaning Template">
+  <meta property="og:description" content="Professional cleaning for homes, offices, rentals and move-out spaces.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="https://example.co.uk/">
+  <link rel="icon" href="assets/logos/favicon.svg">
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="announcement"><span class="announcement-text"></span><button class="announcement-close" aria-label="Close announcement">&times;</button></div>
+  <header class="site-header">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Home"><span class="brand-mark">P</span><span data-business></span></a>
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span></button>
+      <nav class="nav-links" id="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="services.html">Services</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a><a class="btn btn-primary" href="#quote">Get a Quote</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="hero-img" src="assets/images/hero-cleaner-bucket.jpg" width="1600" height="1067" alt="Smiling professional cleaner holding a bucket of cleaning supplies">
+      <div class="container hero-content" data-reveal>
+        <span class="eyebrow">Residential & commercial cleaning</span>
+        <h1>Professional Cleaning. A Fresher Space.</h1>
+        <p class="lead">A polished static website template for cleaning companies that serve homes, apartments, offices, rentals and move-out properties with dependable, detail-focused service.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#quote">Get My Free Quote</a><a class="btn btn-ghost" href="services.html">Explore Our Services</a></div>
+        <div class="trust-pills"><span>Fully Insured</span><span>Reliable & Professional</span><span>Flexible Scheduling</span><span>Satisfaction Focused</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip" aria-label="Trust indicators">
+      <div class="container trust-grid">
+        <div class="trust-item" data-reveal><span><img src="assets/icons/dependable.png" alt=""></span> Dependable Layout</div>
+        <div class="trust-item" data-reveal><span><img src="assets/icons/insurance.png" alt=""></span> Trust-Focused Sections</div>
+        <div class="trust-item" data-reveal><span><img src="assets/icons/eco-cleaning-product.png" alt=""></span> Cleaning-Niche Design</div>
+        <div class="trust-item" data-reveal><span><img src="assets/icons/question.png" alt=""></span> Guided Quote Flow</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <span class="eyebrow">Services</span>
+        <h2>Cleaning plans designed around the way each space is used.</h2>
+        <div class="grid-3" data-services-grid></div>
+      </div>
+    </section>
+
+    <section class="section quote-intro">
+      <div class="container split">
+        <div data-reveal>
+          <span class="eyebrow">Built to sell cleaning services</span>
+          <h2>A conversion path that feels like a real booking experience.</h2>
+          <p class="lead">Instead of another repeated service block, this section prepares visitors for the quote checker with clear expectations and trust cues.</p>
+        </div>
+        <div class="quote-cues" data-reveal>
+          <article><img src="assets/icons/dependable.png" alt=""><div><h3>Fast choices</h3><p>Visitors choose property type, size, cleaning type and frequency without a long generic form.</p></div></article>
+          <article><img src="assets/icons/insurance.png" alt=""><div><h3>Trust-first copy</h3><p>Every step keeps the quote feeling transparent, professional and easy to customise.</p></div></article>
+          <article><img src="assets/icons/question.png" alt=""><div><h3>Frontend ready</h3><p>The flow works statically now and can later connect to a form service or backend.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="quote">
+      <div class="container split">
+        <div data-reveal>
+          <span class="eyebrow">Smart quote checker</span>
+          <h2>Estimate a cleaning range in under a minute.</h2>
+          <p class="lead">This frontend quote flow is ready for Netlify Forms, Formspree, EmailJS or a backend later, without changing the interface.</p>
+        </div>
+        <form class="quote-app" aria-label="Cleaning quote estimator">
+          <div class="quote-top"><strong class="quote-count">Step 1 of 6</strong><span>Estimated pricing</span></div>
+          <div class="quote-progress" aria-hidden="true"><span></span></div>
+          <section class="quote-step" data-requires="property"><h3>What type of property needs cleaning?</h3><div class="choice-grid"><button type="button" class="choice" data-group="property" data-value="house">House</button><button type="button" class="choice" data-group="property" data-value="apartment">Apartment</button><button type="button" class="choice" data-group="property" data-value="office">Office</button><button type="button" class="choice" data-group="property" data-value="commercial">Commercial Property</button><button type="button" class="choice" data-group="property" data-value="airbnb">Airbnb</button></div><p class="quote-error"></p><button type="button" class="btn btn-primary" data-next>Next</button></section>
+          <section class="quote-step" data-requires="size"><h3>How large is the space?</h3><div class="choice-grid" data-size-options></div><p class="quote-error"></p><div class="quote-actions"><button type="button" class="btn btn-secondary" data-back>Back</button><button type="button" class="btn btn-primary" data-next>Next</button></div></section>
+          <section class="quote-step" data-requires="clean"><h3>What cleaning type do you need?</h3><div class="choice-grid"><button type="button" class="choice" data-group="clean" data-value="standard">Standard Cleaning</button><button type="button" class="choice" data-group="clean" data-value="deep">Deep Cleaning</button><button type="button" class="choice" data-group="clean" data-value="move">Move-In / Move-Out</button><button type="button" class="choice" data-group="clean" data-value="recurring">Recurring Cleaning</button><button type="button" class="choice" data-group="clean" data-value="construction">Post-Construction</button></div><p class="quote-error"></p><div class="quote-actions"><button type="button" class="btn btn-secondary" data-back>Back</button><button type="button" class="btn btn-primary" data-next>Next</button></div></section>
+          <section class="quote-step" data-requires="frequency"><h3>How often?</h3><div class="choice-grid"><button type="button" class="choice" data-group="frequency" data-value="once">One Time</button><button type="button" class="choice" data-group="frequency" data-value="weekly">Weekly</button><button type="button" class="choice" data-group="frequency" data-value="biweekly">Every 2 Weeks</button><button type="button" class="choice" data-group="frequency" data-value="monthly">Monthly</button></div><p class="quote-error"></p><div class="quote-actions"><button type="button" class="btn btn-secondary" data-back>Back</button><button type="button" class="btn btn-primary" data-next>Next</button></div></section>
+          <section class="quote-step" data-details="true"><h3>Where should we send the quote?</h3><div class="grid-2"><div class="field"><label>Name<input name="name" required></label></div><div class="field"><label>Email<input name="email" type="email" required></label></div><div class="field"><label>Phone<input name="phone" required></label></div><div class="field"><label>Postcode<input name="postcode" required></label></div><div class="field"><label>Preferred Date<input name="date" type="date"></label></div></div><div class="field"><label>Additional Notes<textarea name="notes"></textarea></label></div><p class="quote-error"></p><div class="quote-actions"><button type="button" class="btn btn-secondary" data-back>Back</button><button type="button" class="btn btn-primary" data-next>See Estimate</button></div></section>
+          <section class="quote-step"><h3>Your estimated cleaning range</h3><div class="estimate-box"><div class="estimate-price">£120 - £180</div><p>Estimated pricing only. Final pricing may vary based on the property and cleaning requirements.</p><ul class="estimate-summary"></ul></div><div class="quote-actions"><button type="button" class="btn btn-secondary" data-back>Back</button><button type="button" class="btn btn-primary" data-request>Request My Quote</button><a class="btn btn-secondary estimate-whatsapp" href="#">WhatsApp Us</a></div><p class="quote-success" aria-live="polite"></p></section>
+        </form>
+      </div>
+    </section>
+
+    <section class="section tight">
+      <div class="container grid-3">
+        <article class="benefit" data-reveal><span class="icon image-icon"><img src="assets/icons/dependable.png" alt=""></span><h3>Reliable & On-Time</h3><p>Clear arrival windows and thoughtful communication from quote to completion.</p></article>
+        <article class="benefit" data-reveal><span class="icon image-icon"><img src="assets/icons/eco-cleaning-product.png" alt=""></span><h3>Eco-Friendly Products</h3><p>Gentle product options can be highlighted for families, pets and sensitive spaces.</p></article>
+        <article class="benefit" data-reveal><span class="icon image-icon"><img src="assets/icons/insurance.png" alt=""></span><h3>Fully Insured</h3><p>Trust-building placeholders are easy to replace with verified company credentials.</p></article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div data-reveal><span class="eyebrow">Before & after</span><h2>See the Difference</h2><p class="lead">Showcase visible cleaning results with reusable comparison sliders.</p><a class="btn btn-primary" href="portfolio.html">View Our Full Portfolio</a></div>
+        <div class="ba-slider" data-reveal><img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1100&q=78" alt="Kitchen before detailed cleaning"><img class="ba-after" src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?auto=format&fit=crop&w=1100&q=82" alt="Kitchen after detailed cleaning"><span class="ba-label before">Before</span><span class="ba-label after">After</span><span class="ba-handle">↔</span><input class="ba-range" type="range" min="0" max="100" value="50" aria-label="Compare before and after kitchen cleaning"></div>
+      </div>
+    </section>
+
+    <section class="section stats-band"><div class="container stats-grid"></div></section>
+
+    <section class="section" id="process">
+      <div class="container"><span class="eyebrow">How it works</span><h2>A simple path from quote to fresh space.</h2><div class="process"><article data-reveal><h3>Request a Quote</h3><p>Share your property type, cleaning needs and preferred timing.</p></article><article data-reveal><h3>Choose Your Service</h3><p>Pick the cleaning plan and schedule that fits your space.</p></article><article data-reveal><h3>We Clean</h3><p>The team arrives prepared and follows a clear cleaning checklist.</p></article><article data-reveal><h3>Enjoy Your Space</h3><p>Walk into a refreshed home, office or rental that feels ready.</p></article></div></div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="container split"><div><span class="eyebrow">Reviews</span><h2>Calm, professional service people remember.</h2><p>Testimonials are centrally configurable in `js/config.js`.</p><div class="test-controls"><button class="icon-btn test-prev" aria-label="Previous testimonial">←</button><button class="icon-btn test-next" aria-label="Next testimonial">→</button></div></div><div class="testimonials"><div class="testimonial-window"><div class="testimonial-track"></div></div></div></div>
+    </section>
+
+    <section class="section tight">
+      <div class="container split"><div><span class="eyebrow">Service area</span><h2>Proudly serving London and surrounding areas.</h2><p>Use the map embed and service-area list as placeholders, then swap in the cleaning company's real coverage area before launch.</p></div><div class="map-panel"><iframe title="Service area map" src="https://www.openstreetmap.org/export/embed.html?bbox=-0.2210%2C51.4600%2C-0.0250%2C51.5450&amp;layer=mapnik&amp;marker=51.5007%2C-0.1246" loading="lazy"></iframe><div class="map-locations"><span>Camden</span><span>Islington</span><span>Shoreditch</span><span>Greenwich</span></div></div></div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container"><span class="eyebrow">FAQ</span><h2>Good answers before visitors need to ask.</h2><div class="faq-list">
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">Do I need to provide cleaning supplies?<span>+</span></button><div class="faq-answer"><div><p>No. The template copy assumes the cleaning team brings professional supplies, with optional customer-provided products available.</p></div></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">Are your cleaners insured?<span>+</span></button><div class="faq-answer"><div><p>Yes, this placeholder is designed for an insured company. Replace with your verified coverage details.</p></div></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">Do you offer recurring cleaning?<span>+</span></button><div class="faq-answer"><div><p>Weekly, biweekly and monthly recurring schedules are supported in the quote estimator.</p></div></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">How much does cleaning cost?<span>+</span></button><div class="faq-answer"><div><p>Pricing depends on size, cleaning type and frequency. All calculator values live in `js/config.js`.</p></div></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">Do you clean offices?<span>+</span></button><div class="faq-answer"><div><p>Yes. Commercial and office cleaning are included as configurable service paths.</p></div></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">Can I reschedule?<span>+</span></button><div class="faq-answer"><div><p>Yes. Replace this with your company’s rescheduling policy.</p></div></div></article>
+        <article class="faq-item"><button class="faq-question" aria-expanded="false">What is included in a deep clean?<span>+</span></button><div class="faq-answer"><div><p>Deep cleaning can include detail dusting, buildup removal, fixtures, baseboards, appliances and high-touch surfaces.</p></div></div></article>
+      </div></div>
+    </section>
+
+    <section class="section stats-band"><div class="container split"><div><span class="eyebrow">Special offer</span><h2>Ready for a Cleaner Space?</h2><p>Get your free cleaning quote today.</p></div><div class="hero-actions"><a class="btn btn-primary" href="#quote">Get My Free Quote</a><a class="btn btn-ghost" data-call-link href="#">Call Us</a></div></div></section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid"><div><a class="brand" href="index.html"><span class="brand-mark">P</span><span data-business></span></a><p>Premium static website template for residential and commercial cleaning businesses.</p></div><div><h3>Quick Links</h3><ul><li><a href="services.html">Services</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div><div><h3>Services</h3><ul><li>Residential</li><li>Commercial</li><li>Deep Cleaning</li><li>Move-Out</li></ul></div><div><h3>Contact</h3><ul><li><a data-call-link href="#"><span data-phone></span></a></li><li><a href="mailto:hello@pristinecleaning.example" data-email></a></li><li data-address></li><li data-hours></li></ul></div></div>
+    <div class="container footer-bottom"><span>© <span id="year">2026</span> <span data-business></span>. All rights reserved.</span><span><a href="#">Privacy Policy</a> · <a href="#">Terms</a></span></div>
+  </footer>
+  <div class="float-actions"><a class="float-whatsapp" href="#" aria-label="WhatsApp us"><img src="assets/icons/whatsapp.png" alt=""></a><a class="float-call" href="#" data-call-link aria-label="Call us"><img src="assets/icons/telephone-call.png" alt=""></a><a class="float-quote" href="#quote" aria-label="Get a quote"><img src="assets/icons/question.png" alt=""></a></div>
+  <div class="chatbot"><div class="chat-panel"><strong>Need Help?</strong><p class="chat-message">Hi! How can we help you today?</p><div class="chat-options"><button class="chat-option" data-chat="quote">Get a Quote</button><button class="chat-option" data-chat="services">View Services</button><button class="chat-option" data-chat="pricing">Pricing</button><button class="chat-option" data-chat="areas">Service Areas</button><button class="chat-option" data-chat="contact">Speak With Us</button></div></div><button class="chat-toggle" aria-label="Open help chat"><img src="assets/icons/question.png" alt=""></button></div>
+  <button class="back-top" aria-label="Back to top">↑</button>
+  <script src="js/config.js"></script><script src="js/main.js"></script><script src="js/quote.js"></script>
+</body>
+</html>
